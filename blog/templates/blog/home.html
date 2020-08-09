@@ -1,0 +1,358 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+<div class="wrapper1">
+
+{% for artist in artist %}
+
+  <div class= "artist-graph1">
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+        <a href="{% url 'social-artist1' %}#artist1-section9" target="_blank">
+      {% elif forloop.counter == 2 %}
+        <a href="{% url 'social-artist2' %}#artist2-section9" target="_blank">
+      {% elif forloop.counter == 3 %}
+        <a href="{% url 'social-artist3' %}#artist3-section9" target="_blank">
+      {% elif forloop.counter == 4 %}
+        <a href="{% url 'social-artist4' %}#artist4-section9" target="_blank">
+      {% elif forloop.counter == 5 %}
+        <a href="{% url 'social-artist5' %}#artist5-section9" target="_blank">
+      {% elif forloop.counter == 6 %}
+        <a href="{% url 'social-artist6' %}#artist6-section9" target="_blank">
+      {% elif forloop.counter == 7 %}
+        <a href="{% url 'social-artist7' %}#artist7-section9" target="_blank">
+      {% endif %}
+
+      {% if artist.Artist_Small_Pic_9 %}
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_9.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_9.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_9.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}
+    </a>
+
+    </div>
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section10" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section10" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section10" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section10" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section10" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section10" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section10" target="_blank">
+      {% endif %}
+
+      {% if artist.Artist_Small_Pic_10 %}
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_10.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_10.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_10.url}}';"
+            height=50px;
+            width=50px;>
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}
+      </a>
+    </div>
+
+    <div class= "item2-2">{{artist.Artist_Blurb_9}}</div>
+    <div class= "item2-2">{{artist.Artist_Blurb_10}}</div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section7" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section7" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section7" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section7" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section7" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section7" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section7" target="_blank">
+      {% endif %}
+      
+      {% if artist.Artist_Small_Pic_7 %}
+          <img class="hovIMG" src="{{artist.Artist_Small_Pic_7.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_7.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_7.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}
+      </a>
+
+    </div>
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section8" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section8" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section8" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section8" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section8" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section8" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section8" target="_blank">
+      {% endif %}
+
+      {% if artist.Artist_Small_Pic_8 %}
+          <img class="hovIMG" src="{{artist.Artist_Small_Pic_8.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_8.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_8.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}
+      </a>
+    </div>
+
+    <div class= "item2-2">{{artist.Artist_Blurb_7}}</div>
+    <div class= "item2-2">{{artist.Artist_Blurb_8}}</div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section5" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section5" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section5" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section5" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section5" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section5" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section5" target="_blank">
+      {% endif %}
+     
+    {% if artist.Artist_Small_Pic_5 %}
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_5.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_5.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_5.url}}';"
+            height=50px;
+            width=50px;
+            >
+    {% else %}
+      <a href="">
+      <img class="img-fluid" src="/static/images/chat.png">
+    {% endif %}
+    </a>
+    </div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section6" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section6" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section6" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section6" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section6" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section6" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section6" target="_blank">
+      {% endif %}
+
+      {% if artist.Artist_Small_Pic_6 %}
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_6.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_6.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_6.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}
+      </a>   
+    </div>
+
+    <div class= "item2-2">{{artist.Artist_Blurb_5}}</div>
+    <div class= "item2-2">{{artist.Artist_Blurb_6}}</div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section3" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section3" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section3" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section3" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section3" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section3" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section3" target="_blank">
+      {% endif %}
+      
+      {% if artist.Artist_Small_Pic_3 %}
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_3.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_3.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_3.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}   
+      </a>
+    </div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section4" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section4" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section4" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section4" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section4" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section4" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section4" target="_blank">
+      {% endif %}
+
+      {% if artist.Artist_Small_Pic_4 %}  
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_4.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_4.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_4.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %} 
+      </a> 
+    </div>
+
+    <div class= "item2-2">{{artist.Artist_Blurb_3}}</div>
+    <div class= "item2-2">{{artist.Artist_Blurb_4}}</div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section1" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section1" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section1" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section1" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section1" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section1" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section1" target="_blank">
+      {% endif %}
+      
+      {% if artist.Artist_Small_Pic_1 %}  
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_1.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_1.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_1.url}}';"
+            height=50px;
+            width=50px;
+            >
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}  
+      </a>
+    </div>
+
+    <div class= "item1-1">
+      {% if forloop.counter == 1 %}
+      <a href="{% url 'social-artist1' %}#artist1-section2" target="_blank">
+      {% elif forloop.counter == 2 %}
+      <a href="{% url 'social-artist2' %}#artist2-section2" target="_blank">
+      {% elif forloop.counter == 3 %}
+      <a href="{% url 'social-artist3' %}#artist3-section2" target="_blank">
+      {% elif forloop.counter == 4 %}
+      <a href="{% url 'social-artist4' %}#artist4-section2" target="_blank">
+      {% elif forloop.counter == 5 %}
+      <a href="{% url 'social-artist5' %}#artist5-section2" target="_blank">
+      {% elif forloop.counter == 6 %}
+      <a href="{% url 'social-artist6' %}#artist6-section2" target="_blank">
+      {% elif forloop.counter == 7 %}
+      <a href="{% url 'social-artist7' %}#artist7-section2" target="_blank">
+      {% endif %}
+   
+      {% if artist.Artist_Small_Pic_2 %}  
+        <img class="hovIMG" src="{{artist.Artist_Small_Pic_2.url}}" 
+              onmouseover="this.src='{{artist.Artist_Hover_Pic_2.url}}';"
+              onmouseout="this.src='{{artist.Artist_Small_Pic_2.url}}';"
+            height=50px;
+            width=50px;>
+      {% else %}
+        <a href="">
+        <img class="img-fluid" src="/static/images/chat.png">
+      {% endif %}
+      </a> 
+    </div>
+
+    <div class= "item2-2">{{artist.Artist_Blurb_1}}</div>
+    <div class= "item2-2">{{artist.Artist_Blurb_2}}</div>
+
+    <div class= "artist-name">
+      {% if forloop.counter == 1 %}
+      <a href = "{% url 'social-artist1' %}">{{artist.name}}</a>
+      {% elif forloop.counter == 2 %}
+      <a href = "{% url 'social-artist2' %}">{{artist.name}}</a>
+      {% elif forloop.counter == 3 %}
+      <a href = "{% url 'social-artist3' %}">{{artist.name}}</a>
+      {% elif forloop.counter == 4 %}
+      <a href = "{% url 'social-artist4' %}">{{artist.name}}</a>
+      {% elif forloop.counter == 5 %}
+      <a href = "{% url 'social-artist5' %}">{{artist.name}}</a>
+      {% elif forloop.counter == 6 %}
+      <a href = "{% url 'social-artist6' %}">{{artist.name}}</a>
+      {% elif forloop.counter == 7 %}
+      <a href = "{% url 'social-artist7' %}">{{artist.name}}</a>
+      {% endif %}
+    </div>
+
+  </div>
+
+{% endfor %}
+</div>
+
+
+{% endblock content %}

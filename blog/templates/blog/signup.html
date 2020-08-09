@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% block title %} Create New List {% endblock %}
+
+{% block content %}
+
+<div class="signup-header">Signup.</div>
+<div class ="signup-boxes">
+	<div class="signup-box1">
+		<div class="signupbox1-title">We only send out good invites - join the good network</div>
+		<div class="signupbox1-content">
+		</div>
+	</div>
+
+	<div class="signup-box2">
+		<form method = 'post' action ="">
+			{% csrf_token %}
+			{{form.as_p}}
+			<button type = "submit", name = "save">Signup</button>
+		</form>
+	</div>
+</div>
+
+{% endblock content %}
